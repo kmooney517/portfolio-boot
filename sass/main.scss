@@ -152,12 +152,15 @@ $background: #797E81;
 /*-----Tiles-----*/
 .homeRow{
   margin: 2% auto;
+  width: 95%;
 }
 
 .homeRow .col-sm-4{
   background: $darkGray;
   border-radius: 3px;
   height: 20em;
+  width: 32%;
+  margin: 5px;
   img{
     width: 20em;
   }
