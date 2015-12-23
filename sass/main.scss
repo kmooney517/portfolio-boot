@@ -261,8 +261,7 @@ $background: #797E81;
 
 
 
-
-
+/*********************************Skills Page**********************/
 
 .skillsTemplate{
   background: url(https://images.unsplash.com/photo-1444076095244-6edf09c44c27?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=d10d636939b545b24ea22d57ffb29a16) no-repeat center center fixed;
@@ -270,34 +269,24 @@ $background: #797E81;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  height: 93vh;
+
   .circles{
+    width: 95%;
+    margin: 0 auto 5% auto;
     text-align: center;
-    margin-bottom: 4em;    
+    padding-top: 5%;
+    .circle{
+      width: 20em;
+      height: 20em;
+      margin: 5px;
+      border-radius: 50%;
+      background: lighten($darkGray, 30%);
+    }
     p{
       color: #333333;
       font-size: 1.3em;
       font-weight: 100;
-    }
-    .back p{
-      color: white;
-      font-size: 1em;
-      width: 70%;
-      margin-top: 14%;
-      margin-left: 16%;
-    }
-  }
-  .circle{
-    display: inline-block;
-    border: 1px solid white;
-    background: gray;
-    opacity: .9;
-    border-radius: 50%;
-    width: 17em;
-    height: 17em;
-    padding-bottom: 5%;
-    margin-bottom: 2%;
-    &:hover{
-      border: 1px solid #333333;
     }
   }
   .libraries {
@@ -334,37 +323,36 @@ $background: #797E81;
   }
 }
 
-.flip {
-  -webkit-perspective: 800;
-    position: relative;
-    margin: 50px auto;
-}
-.flip .card.flipped {
-  -webkit-transform: rotatey(-180deg);
-}
-.flip .card {
-  width: 100%;
-  height: 100%;
-  -webkit-transform-style: preserve-3d;
-  -webkit-transition: 1s;
-}
-.flip .card .face {
-  -webkit-backface-visibility: hidden ;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  z-index: 2;
-
-}
-.flip .card .front {
-  position: absolute;
-  z-index: 1;
-    cursor: pointer;
-}
-.flip .card .back {
-  -webkit-transform: rotatey(-180deg);
-  cursor: pointer;
-}
+// .flip {
+//   -webkit-perspective: 800;
+//     position: relative;
+//     margin: 50px auto;
+// }
+// .flip .card.flipped {
+//   -webkit-transform: rotatey(-180deg);
+// }
+// .flip .card {
+//   width: 100%;
+//   height: 100%;
+//   -webkit-transform-style: preserve-3d;
+//   -webkit-transition: 1s;
+// }
+// .flip .card .face {
+//   -webkit-backface-visibility: hidden ;
+//   width: 100%;
+//   height: 100%;
+//   position: absolute;
+//   z-index: 2;
+// }
+// .flip .card .front {
+//   position: absolute;
+//   z-index: 1;
+//     cursor: pointer;
+// }
+// .flip .card .back {
+//   -webkit-transform: rotatey(-180deg);
+//   cursor: pointer;
+// }
 
 .backHome{
   text-align: center;
@@ -377,6 +365,17 @@ $background: #797E81;
     }
   }
 }
+
+
+
+
+
+
+
+
+
+
+
 
 @media all and (max-width: 1115px) and (min-width: 320px) {
   .projectsTemplate{
